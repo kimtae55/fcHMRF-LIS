@@ -83,13 +83,13 @@ class CrfRnn3D_phlcpp(nn.Module):
             # Spatial filtering
             spatial_out = torch.mm(
                 self.spatial_ker_weights,
-                self.spatial_filter.apply(Q).view(self.num_labels, -1),
+                self.spatial_filter.apply(Q).view(self.num_labels, -1) - Q.view(self.num_labels, -1),
             )
 
             # Bilateral filtering
             bilateral_out = torch.mm(
                 self.bilateral_ker_weights,
-                self.bilateral_filter.apply(Q).view(self.num_labels, -1),
+                self.bilateral_filter.apply(Q).view(self.num_labels, -1) - Q.view(self.num_labels, -1),
             )
 
             # Compatibility transform

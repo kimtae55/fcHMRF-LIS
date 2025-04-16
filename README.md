@@ -16,9 +16,9 @@ Existing spatial FDR control methods face three fundamental challenges in neuroi
   
   ❗Many spatial FDR methods lack computational scalability, making them impractical for analyzing high-resolution datasets (e.g. neuroimaging data)
 
-The **fcHMRF-LIS** is a stable, spatial false discover rate (FDR) control method that mitigates the above three issues:
+The *fcHMRF-LIS* is a stable, spatial false discover rate (FDR) control method that mitigates the above three issues:
 
-  🔦 It is the first multiple hypothesis testing framework to utilize a **fully connected HMRF** to model voxel-wise spatial dependencies. Our method exhibits exceptional stability across multiple replications.
+  🔦 It is the first multiple hypothesis testing framework to utilize a *fully connected HMRF* to model voxel-wise spatial dependencies. Our method exhibits exceptional stability across multiple replications.
   
   🔦 We provide an efficient and scalable expectation-maximization (EM) algorithm leveraging the CRF-RNN, where high-dimensional filtering is accelerated on a permutohedral lattice.
   

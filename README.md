@@ -1,4 +1,4 @@
-# fcHMRF-LIS: a stable, spatial false discover rate (FDR) control method 
+# FcHMRF-LIS: a stable, spatial false discover rate (FDR) control method 
 
 🧠 **Why use FDR control?**
 

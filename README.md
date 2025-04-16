@@ -1,11 +1,19 @@
 # fcHMRF-LIS
 The fcHMRF-LIS is a stable spatial false discover rate (FDR) control method that utilizes a fully connected hidden Markov random field to model the spatial dependencies. 
 
+🧠 Why use FDR control? 
+
+
+🌟 What is special about fcHMRF-LIS?
+As FDR is defined as the expected proportion of false discoveries amongst all discoveries, 
+
+
 ![gui_image](https://github.com/kimtae55/fcHMRF-LIS/blob/f004c8272bd890871416c79717d4a6518125b0a0/misc/fdr_fnr_atp_variation.png)
 
 ## Table of Contents
 * [Installation](#requirements-and-installation)
 * [Usage](#usage)
+* [Citing our work](#cite)
 
 ## Installation
 This package was developed using Python 3.12 and Pytorch 2.6.0.
@@ -29,3 +37,6 @@ python -m src.train --lr 1e-4
                     --ppath {p-values of the input test statistics}
                     --savepath {directory path for saving results}
 ```
+
+## Citing our work 
+Arxiv coming soon!

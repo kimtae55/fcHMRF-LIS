@@ -1,20 +1,21 @@
 # fcHMRF-LIS
-FDR Control Method for Spatial 3D Data 
+The fcHMRF-LIS is a stable spatial false discover rate (FDR) control method that utilizes a fully connected hidden Markov random field to model the spatial dependencies. 
+
+![gui_image](https://github.com/kimtae55/fcHMRF-LIS/misc/fdr_fnr_atp_variation.png)
 
 ## Table of Contents
-* [Requirements and Installation](#requirements-and-installation)
+* [Installation](#requirements-and-installation)
 * [Usage](#usage)
 
-## Requirements and Installation
+## Installation
 This package was developed using Python 3.12 and Pytorch 2.6.0.
 The permutohedral lattice based filtering relies on C++ implementation provided by [crfasrnn_pytorch](https://github.com/sadeepj/crfasrnn_pytorch).
 
 To install the package, please run the following lines:
 ```bash
-git clone https://github.com/kimtae55/fcHMRF-LIS
-cd $PATH_TO_fcHMRF-LIS$
+git clone $fcHMRF-LIS-repo$
+cd $PATH_TO_fcHMRF-LIS-repo$
 pip install -r requirements.txt
-python setup.py install
 ```
 
 ## Usage

@@ -35,7 +35,7 @@ To install the package, please run the following lines:
 ```bash
 git clone $fcHMRF-LIS-repo$
 cd $PATH_TO_fcHMRF-LIS-repo$
-pip install -r requirements.txt
+python setup.py install 
 ```
 
 ## Usage

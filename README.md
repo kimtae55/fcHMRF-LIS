@@ -1,7 +1,7 @@
 # fcHMRF-LIS
 The fcHMRF-LIS is a stable spatial false discover rate (FDR) control method that utilizes a fully connected hidden Markov random field to model the spatial dependencies. 
 
-![gui_image](https://github.com/kimtae55/fcHMRF-LIS/misc/fdr_fnr_atp_variation.png)
+![gui_image](https://github.com/kimtae55/fcHMRF-LIS/blob/f004c8272bd890871416c79717d4a6518125b0a0/misc/fdr_fnr_atp_variation.png)
 
 ## Table of Contents
 * [Installation](#requirements-and-installation)

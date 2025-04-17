@@ -40,13 +40,13 @@ python setup.py install
 
 ## Usage
 ```bash
-python -m src.train --lr 1e-4
-                    --e 20
-                    --threshold 0.05
+python -m src.train --lr {learning rate}
+                    --e {number of EM steps}
+                    --threshold {desired FDR threshold}
                     --labelpath {optional groundtruth if using for simulation}
-                    --datapath {input test statistics}
+                    --datapath {z-statistics as in the paper}
                     --betapath {delta_mu as in the paper}
-                    --ppath {p-values of the input test statistics}
+                    --ppath {p-values corresponding to the z-statistics}
                     --savepath {directory path for saving results}
 ```
 

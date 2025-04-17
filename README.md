@@ -9,8 +9,6 @@ When you test many hypotheses, the chance of making false discoveries increases.
 
 The task of FDR control in the field of statistics can be viewed analogously to an unsupervised binary segmentation task. 
 
----
-
 # 🌟 What is special about fcHMRF-LIS?
 
 ❗ Existing spatial FDR control methods face three fundamental challenges in neuroimaging applications:

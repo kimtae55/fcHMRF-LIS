@@ -48,7 +48,7 @@ python -m src.train --lr {learning rate}
                     --labelpath {optional groundtruth if using for simulation}
                     --datapath {z-statistics as in the paper}
                     --betapath {delta_mu as in the paper}
-                    --ppath {p-values corresponding to the z-statistics}
+                    --ppath {p-values corresponding to the z-statistics, this is just used for initialization}
                     --savepath {directory path for saving results}
 ```
 

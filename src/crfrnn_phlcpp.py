@@ -100,7 +100,7 @@ class CrfRnn3D_phlcpp(nn.Module):
             )
 
             # Adding unary potentials back
-            Q = U + Q 
+            Q = U - Q 
 
         Q = torch.unsqueeze(self._softmax(Q), 0)
         return Q

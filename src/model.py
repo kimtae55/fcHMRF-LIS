@@ -152,7 +152,7 @@ class fchmrf(nn.Module):
         - max_iter: Maximum number of iterations
         """
         Q1_t0, Q2_t0 = self.e_step()  # E-step, returns the initial Q1 and Q2
-        self.m_step(inner_iter=1)      # M-step, maximizes Q2, Q1_t0 is already in closed form 
+        self.m_step(inner_iter=5)      # M-step, maximizes Q2, Q1_t0 is already in closed form 
         return self.q_hx_1, -Q1_t0/self.I.numel(), -Q2_t0/self.I.numel()
     
     

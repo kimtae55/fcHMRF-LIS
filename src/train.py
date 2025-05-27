@@ -11,6 +11,7 @@ import random
 from src import config
 import nibabel as nib
 import sys
+from tqdm import tqdm, trange 
 
 def run(args):
     """
@@ -31,13 +32,13 @@ def run(args):
     net = fchmrf(X, beta, mask=None, pval=None, threshold=args.threshold, lr=args.lr)
     print(summary(net))
 
-    for epoch in range(max_iter):
-        # Run a step of EM algorithm
+    for epoch in trange(max_iter, desc="EM Training", leave=True):
         h, loss_q1, loss_q2 = net.em_step()
+        tqdm.write(f"Epoch {epoch + 1:03d} | Q1: {loss_q1:.4f} | Q2: {loss_q2:.4f}")
 
     net.eval()
     h, _, _ = net.em_step()
-    fdr, fnr, atp, signal_lis = util.p_lis(h.squeeze(), threshold=args.threshold, label=y.ravel())
+    fdr, fnr, atp, signal_lis = util.p_lis(h.squeeze(), threshold=args.threshold, label=y.ravel(), savepath=args.savepath)
     print(fdr, fnr, atp)
 
 if __name__ == "__main__":

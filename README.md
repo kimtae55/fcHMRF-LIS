@@ -53,6 +53,16 @@ python -m src.train --lr {learning rate}
 ```
 
 ## Citing our work 
-Arxiv coming soon!
+```
+@misc{kim2025falsediscoveryratecontrol,
+      title={A False Discovery Rate Control Method Using a Fully Connected Hidden Markov Random Field for Neuroimaging Data}, 
+      author={Taehyo Kim and Qiran Jia and Mony J. de Leon and Hai Shu},
+      year={2025},
+      eprint={2505.20688},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      url={https://arxiv.org/abs/2505.20688}, 
+}
+```
 
 ## Updates

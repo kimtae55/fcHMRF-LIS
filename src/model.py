@@ -42,7 +42,7 @@ class fchmrf(nn.Module):
         self.q_hx_1 = None
 
         # Initialize additinoal model parameters
-        self.w_0 = nn.Parameter(torch.tensor([0.5])) 
+        self.w_0 = nn.Parameter(torch.tensor([0.1])) 
         self.N_01 = Normal(torch.tensor([0.0]), torch.tensor([1.0]))
 
         self.kde = GaussianKDE(self.I.flatten(), batch_size=1000)

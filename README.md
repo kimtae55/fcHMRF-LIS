@@ -7,7 +7,7 @@ In high-dimensional testing (e.g., brain imaging, genomics analyses), we often p
 
 When you test many hypotheses, the chance of making false discoveries increases. FDR control limits the expected proportion of false positives among the discoveries, ensuring results are statistically reliable at a desired level, without being overly conservative like family-wise error rate (FWER) method. 
 
-The mechanisms of FDR control in the field of statistics can be viewed analogously to an unsupervised binary segmentation task. 
+The mechanisms behind spatial FDR control can be viewed analogously to an unsupervised binary segmentation task. 
 
 # 🌟 What is special about fcHMRF-LIS?
 

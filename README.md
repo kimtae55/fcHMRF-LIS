@@ -1,4 +1,4 @@
-# FcHMRF-LIS: a stable, spatial FDR control method 
+# FcHMRF-LIS: a stable, spatial FDR control method (Medical Image Analysis, 2026)
 
 # 🧠 Introduction
  **Why use FDR control?**
@@ -54,14 +54,16 @@ python -m src.train --lr {learning rate}
 
 ## Citing our work 
 ```
-@misc{kim2025falsediscoveryratecontrol,
-      title={A False Discovery Rate Control Method Using a Fully Connected Hidden Markov Random Field for Neuroimaging Data}, 
-      author={Taehyo Kim and Qiran Jia and Mony J. de Leon and Hai Shu},
-      year={2025},
-      eprint={2505.20688},
-      archivePrefix={arXiv},
-      primaryClass={stat.ML},
-      url={https://arxiv.org/abs/2505.20688}, 
+@article{KIM2026104158,
+title = {A false discovery rate control method using a fully connected hidden Markov random field for neuroimaging data},
+journal = {Medical Image Analysis},
+volume = {113},
+pages = {104158},
+year = {2026},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2026.104158},
+url = {https://www.sciencedirect.com/science/article/pii/S1361841526002276},
+author = {Taehyo Kim and Qiran Jia and Mony J. {de Leon} and Hai Shu},
 }
 ```
 

@@ -1,6 +1,5 @@
 # FcHMRF-LIS: a stable, spatial FDR control method 
-
-(Medical Image Analysis, 2026)
+# (Medical Image Analysis, 2026)
 
 # 🧠 Introduction
  **Why use FDR control?**
